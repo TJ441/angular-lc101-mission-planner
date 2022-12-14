@@ -13,7 +13,7 @@ export class CrewComponent implements OnInit {
     {name: "Ellen Ochoa", firstMission: true}
   ];
   
-  memberBeingEdited: object;
+  memberBeingEdited: object = null;
 
   constructor() { }
 
