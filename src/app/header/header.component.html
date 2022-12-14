@@ -11,7 +11,8 @@
     </ng-template>
 </h3>
 
-<h3>Carrier Rocket:
+<h3>
+    Carrier Rocket:
     <span *ngIf="!editingRocket; else editRocketBlock">
         <span class="editable-text" (click)="editingRocket = true;">{{ rocketName }}</span>
     </span>
