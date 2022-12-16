@@ -49,5 +49,6 @@ export class EquipmentComponent implements OnInit {
      this.cargoMass = 0;
      this.cargoHold = [];
      this.warning = false;
+     this.massBudgetRemaining = 2000;
    }
 }
