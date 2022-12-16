@@ -24,6 +24,7 @@ export class EquipmentComponent implements OnInit {
    limitReached: boolean = false;
    massBudgetRemaining: number = 2000;
    warning: boolean = false;
+   
    constructor() { }
 
    ngOnInit() { }
