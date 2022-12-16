@@ -35,10 +35,13 @@ export class EquipmentComponent implements OnInit {
    }
 
    setLimits(item) {
-    if (this.cargoHold.length === this.maxItems)
+    if (this.cargoHold.length === this.maxItems) {
       return true;
-    if (this.cargoMass + item.mass > this.maximumAllowedMass)
+    }
+      
+    if (this.cargoMass + item.mass > this.maximumAllowedMass) {
       return true;
+    } 
     return false;
    }
 }
