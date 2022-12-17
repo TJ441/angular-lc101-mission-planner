@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crew.component.css']
 })
 export class CrewComponent implements OnInit {
-
-  inCrew: boolean = false;
+  
   crew: object[] = [];
 
   candidates: object[] = [
@@ -31,5 +30,11 @@ export class CrewComponent implements OnInit {
         let index = this.crew.indexOf(candidate);
         this.crew.splice(index, 1);
     }   
+  }
+
+  inCrew(candidate) {
+    if (this.crew.includes(candidate)) 
+      return true;
+    return false;
   }
 }
