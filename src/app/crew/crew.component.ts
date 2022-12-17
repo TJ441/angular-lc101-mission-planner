@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crew.component.css']
 })
 export class CrewComponent implements OnInit {
-  
+
   crew: object[] = [];
+  image: string = '';
+  selected: boolean = false;
 
   candidates: object[] = [
     {name: "Sally Ride", photo: 'https://handlers.education.launchcode.org/static/images/sally-ride.jpg'},
@@ -36,5 +38,9 @@ export class CrewComponent implements OnInit {
     if (this.crew.includes(candidate)) 
       return true;
     return false;
+  }
+  getImage(astronaut) {
+    this.selected = true;
+    this.image = astronaut.photo;
   }
 }
